@@ -1,0 +1,20 @@
+# Bỏ môi trường ảo
+venv/
+
+# Bỏ file cache của Python
+__pycache__/
+
+# Bỏ file database SQLite
+*.sqlite3
+
+# Bỏ các file/mục không cần thiết
+*.pyc
+*.pyo
+*.log
+
+# Bỏ file môi trường
+.env
+
+# Static/Dynamic nếu tự tạo
+staticfiles/
+media/

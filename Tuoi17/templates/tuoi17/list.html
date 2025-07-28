@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head><title>Danh sách</title></head>
+<body>
+    <h2>📋 Danh sách đã đăng ký</h2>
+    <table border="1">
+        <tr>
+            <th>Họ tên</th>
+            <th>Ngày sinh</th>
+        </tr>
+        {% for item in data %}
+        <tr>
+            <td>{{ item.ho_ten }}</td>
+            <td>{{ item.ngay_sinh }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
