@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: phong-django-web
+    runtime: python
+    buildCommand: ""
+    startCommand: gunicorn phong_django_project.wsgi:application
+    envVars:
+      - key: DJANGO_SETTINGS_MODULE
+        value: phong_django_project.settings
+      - key: PYTHON_VERSION
+        value: 3.11

@@ -1,0 +1,1 @@
+web: gunicorn phong_django_project.wsgi:application
