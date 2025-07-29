@@ -1,0 +1,15 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Trang Quản Trị</title>
+    <link rel="stylesheet" href="{% static '/Tuoi17/static/CSS/admin_home.css' %}">
+</head>
+<body>
+    <div class="container">
+        <h2>📊 Trang Quản Trị - Hệ thống Đăng ký Tuổi 17</h2>
+        <a class="btn" href="{% url 'register' %}">📥 Đăng ký mới</a>
+        <a class="btn" href="{% url 'list' %}">📋 Xem danh sách</a>
+    </div>
+</body>
+</html>
