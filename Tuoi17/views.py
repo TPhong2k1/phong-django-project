@@ -12,7 +12,7 @@ def register_view(request):
         form = RegistrationForm(request.POST)
         if form.is_valid():
             form.save()
-            return redirect('list')  # 🔁 Chuyển sang trang danh sách sau khi gửi
+            return render(request, 'Admin/success.html')  # ← tên chính xác thư mục templates
     else:
         form = RegistrationForm()
     return render(request, 'Admin/register.html', {'form': form})

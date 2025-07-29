@@ -5,4 +5,5 @@ urlpatterns = [
     path('', admin_home, name='admin_home'), #Trang quản trị chính
     path('dangky/', register_view, name='register'), #Trang đăng ký
     path('danhsach/', list_view, name='list'), #Trang danh sách
+    path('thanhcong/', register_view, name='success'), #Trang thành công
 ]
