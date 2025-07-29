@@ -24,4 +24,4 @@ def list_view(request):
 
 # Trang thông báo gửi thành công
 def success_view(request):
-    return render(request, 'Admin/success.html')
+    return redirect('success')  # để tránh render lại POST
