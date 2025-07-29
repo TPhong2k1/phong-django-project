@@ -12,12 +12,12 @@ def register_view(request):
         form = RegistrationForm(request.POST)
         if form.is_valid():
             form.save()
-            return render(request, 'tuoi17/success.html')
+            return redirect('list')  # 🔁 Chuyển sang trang danh sách sau khi gửi
     else:
         form = RegistrationForm()
-    return render(request, 'tuoi17/register.html', {'form': form})
+    return render(request, 'Tuoi17/register.html', {'form': form})
 
 # Trang danh sách
 def list_view(request):
     data = Registration.objects.all()
-    return render(request, 'tuoi17/list.html', {'data': data})
+    return render(request, 'Tuoi17/list.html', {'data': data})
