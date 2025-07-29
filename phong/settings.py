@@ -24,7 +24,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-gd4+jb)ann8-(vienc3-a!l32r@7g&%d3&0v54*#n28f2)w_bu'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['.onrender.com'] #Truy cập trên render
 
@@ -122,6 +122,8 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = [ BASE_DIR / "static" ]  # Nơi chứa file tĩnh (CSS/JS)
 
 STATIC_ROOT = BASE_DIR / "staticfiles"  # Nơi Django sẽ gom tất cả file tĩnh để phục vụ production
+
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field
