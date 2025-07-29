@@ -9,6 +9,6 @@ services:
     startCommand: gunicorn phong.wsgi:application
     envVars:
       - key: DJANGO_SETTINGS_MODULE
-        value: phong_django_project.settings
+        value: phong.settings
       - key: PYTHON_VERSION
         value: 3.11
