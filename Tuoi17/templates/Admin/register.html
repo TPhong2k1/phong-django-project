@@ -1,15 +1,20 @@
+{% load static %}
 <!DOCTYPE html>
-<html>
+<html lang="vi">
 <head>
+    <meta charset="UTF-8">
     <title>Đăng ký Tuổi 17</title>
+    <link rel="stylesheet" href="{% static 'CSS/form.css' %}">
 </head>
 <body>
-    <h2>Lý Lịch Nghĩa Vụ Quân Sự</h2>
-    <h1>Sơ Yếu Lý Lịch</h1>
-    <form method="post">
-        {% csrf_token %}
-        {{ form.as_p }}
-        <button type="submit">Gửi</button>
-    </form>
+    <div class="form-box">
+        <h2>Lý Lịch Nghĩa Vụ Quân Sự</h2>
+        <h3>Sơ Yếu Lý Lịch</h3>
+        <form method="post">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit">Gửi</button>
+        </form>
+    </div>
 </body>
 </html>
