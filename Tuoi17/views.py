@@ -17,7 +17,7 @@ def register_view(request):
         form = RegistrationForm()
     return render(request, 'Admin/register.html', {'form': form})
 
-# Trang danh sách
+# Trang danh sách cc
 def list_view(request):
     data = Registration.objects.all()
     return render(request, 'Admin/list.html', {'data': data})
