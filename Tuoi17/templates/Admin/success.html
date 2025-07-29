@@ -4,7 +4,44 @@
 <head>
     <meta charset="UTF-8">
     <title>Đăng ký thành công</title>
-    <link rel="stylesheet" href="{% static 'CSS/success.css' %}">
+    {% comment %} <link rel="stylesheet" href="{% static 'CSS/success.css' %}"> {% endcomment %}
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e0f7fa;
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .success-box {
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            text-align: center;
+        }
+
+        .success-box h2 {
+            color: #00796b;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #00796b;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .btn:hover {
+            background-color: #004d40;
+        }
+    </style>
 </head>
 <body>
     <div class="success-box">
