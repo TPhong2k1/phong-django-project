@@ -1,19 +1,25 @@
 body {
-        font-family: Arial, sans-serif;
-        background-color: #e0f7fa;
-        text-align: center;
-        padding: 50px;
-    }
+    font-family: Arial, sans-serif;
+    background-color: #e0f7fa;
+    margin: 0;
+    height: 100vh; /* Chiếm toàn bộ chiều cao màn hình */
+    display: flex;
+    justify-content: center; /* Canh giữa ngang */
+    align-items: center;     /* Canh giữa dọc */
+}
+
 .success-box {
     background-color: #ffffff;
     padding: 30px;
     border-radius: 10px;
-    display: inline-block;
     box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    text-align: center;
 }
+
 .success-box h2 {
     color: #00796b;
 }
+
 .btn {
     display: inline-block;
     margin-top: 20px;
@@ -23,6 +29,7 @@ body {
     text-decoration: none;
     border-radius: 5px;
 }
+
 .btn:hover {
     background-color: #004d40;
 }
