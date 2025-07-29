@@ -12,12 +12,16 @@ def register_view(request):
         form = RegistrationForm(request.POST)
         if form.is_valid():
             form.save()
-            return render(request, 'Admin/success.html')  # ← tên chính xác thư mục templates
+            return redirect('success')  # ✅ redirect đến trang thành công
     else:
         form = RegistrationForm()
     return render(request, 'Admin/register.html', {'form': form})
 
-# Trang danh sách cc
+# Trang danh sách người đã đăng ký
 def list_view(request):
     data = Registration.objects.all()
     return render(request, 'Admin/list.html', {'data': data})
+
+# Trang thông báo gửi thành công
+def success_view(request):
+    return render(request, 'Admin/success.html')

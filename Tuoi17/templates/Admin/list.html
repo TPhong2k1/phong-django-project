@@ -5,13 +5,67 @@
     <h2>📋 Danh sách đã đăng ký</h2>
     <table border="1">
         <tr>
-            <th>Họ tên</th>
-            <th>Ngày sinh</th>
+            <th>Họ tên khai sinh in hoa</th>
+            <th>Họ và tên thường dùng</th>
+            <th>Ngày tháng năm sinh</th>
+            <th>Giới tính</th>
+            <th>Số CMND hoặc CCCD</th>
+            <th>Nơi đăng ký khai sinh</th>
+            <th>Quê quán</th>
+            <th>Dân tộc</th>
+            <th>Tôn giáo</th>
+            <th>Quốc tịch</th>
+            <th>Nơi thường trú của gia đình</th>
+            <th>Nơi ở hiện tại của bản thân</th>
+            <th>Thành phần gia đình</th>
+            <th>Thành phần Bản thân</th>
+            <th>Trình độ học vấn</th>
+            <th>Nghề nghiệp</th>
+            <th>Nơi ở hiện tại của cha</th>
+            <th>Họ tên mẹ</th>
+            <th>Năm sinh mẹ</th>
+            <th>Tình trạng (mẹ)</th>
+            <th>Nghề nghiệp (mẹ)</th>
+            <th>Nơi ở hiện tại của mẹ</th>
+            <th>Gia đình có bao nhiêu anh chị em</th>
+            <th>Tên anh chị em ruột</th>
+            <th>6-11 tuổi học trường gì</th>    
+            <th>11-15 tuổi học trường gì</th>
+            <th>Từ 16 tuổi đến nay làm gì</th>
         </tr>
         {% for item in data %}
         <tr>
-            <td>{{ item.ho_ten }}</td>
+            <td>{{ item.ho_ten_khai_sinh }}</td>
+            <td>{{ item.ho_ten_thuong_dung }}</td>
             <td>{{ item.ngay_sinh }}</td>
+            <td>{{ item.gioi_tinh }}</td>
+            <td>{{ item.so_cmnd_cccd }}</td>
+            <td>{{ item.noi_dang_ky_khai_sinh }}</td>
+            <td>{{ item.que_quan }}</td>
+            <td>{{ item.dan_toc }}</td>
+            <td>{{ item.ton_giao }}</td>
+            <td>{{ item.quoc_tich }}</td>
+            <td>{{ item.noi_thuong_tru_gia_dinh }}</td>
+            <td>{{ item.noi_o_hien_tai }}</td>
+            <td>{{ item.thanh_phan_gia_dinh }}</td>
+            <td>{{ item.ban_than }}</td>
+            <td>{{ item.trinh_do }}</td>
+            <td>{{ item.nghe_nghiep }}</td>
+            <td>{{ item.ho_ten_cha }}</td>
+            <td>{{ item.nam_sinh_cha }}</td>
+            <td>{{ item.tinh_trang_cha }}</td>
+            <td>{{ item.nghe_nghiep_cha }}</td>
+            <td>{{ item.noi_o_cha }}</td>
+            <td>{{ item.ho_ten_me }}</td>
+            <td>{{ item.nam_sinh_me }}</td>
+            <td>{{ item.tinh_trang_me }}</td>
+            <td>{{ item.nghe_nghiep_me }}</td>
+            <td>{{ item.noi_o_me }}</td>
+            <td>{{ item.so_anh_em }}</td>
+            <td>{{ item.ten_anh_chi_em }}</td>
+            <td>{{ item.hoc_luc_6_11 }}</td>
+            <td>{{ item.hoc_luc_11_15 }}</td>
+            <td>{{ item.hoat_dong_16_den_nay }}</td>
         </tr>
         {% endfor %}
     </table>
