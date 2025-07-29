@@ -2,7 +2,7 @@ import qrcode
 from PIL import Image, ImageDraw
 
 # Dữ liệu QR
-data = "http://127.0.0.1:8000/"
+data = "https://du-an-wed-thanh-nien-tuoi-17.onrender.com"
 # data = "Hé Lô"
 # Tạo QR
 qr = qrcode.QRCode(
