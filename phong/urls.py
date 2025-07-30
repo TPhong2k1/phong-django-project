@@ -25,7 +25,7 @@ def create_super_user():
         User.objects.create_superuser('admin', 'banchihuy@gmail.com', 'banchihuy@')
         print("✅ Superuser 'admin' đã được tạo!")
 
-# create_super_user()
+create_super_user()
 
 urlpatterns = [
     path('admin/', admin.site.urls),
