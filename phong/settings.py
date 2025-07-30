@@ -38,7 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'Tuoi17', # thêm app mới
+    'Tuoi17.apps.Tuoi17Config', # thêm app mới
 ]
 
 MIDDLEWARE = [
