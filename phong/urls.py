@@ -16,8 +16,18 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
+from django.contrib.auth import get_user_model
+
+# ✅ Tạo superuser nếu chưa có
+def create_super_user():
+    User = get_user_model()
+    if not User.objects.filter(username='admin').exists():
+        User.objects.create_superuser('admin', 'admin@example.com', 'admin123')
+        print("✅ Superuser 'admin' đã được tạo!")
+
+create_super_user()
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', include('Tuoi17.urls')),  # Đăng ký ở trang chủ
+    path('', include('Tuoi17.urls')), #đăng ký ở trang chủ
 ]
